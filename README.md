@@ -1,43 +1,22 @@
-No Code ML Project
-Overview
+# No Code ML Project
 
-A No Code Machine Learning app built with [Streamlit].
-Upload data → Train model → Get results.
+## Overview
+A **No Code Machine Learning app** built with [Streamlit].  
+Upload data → Train model → Get results.  
 
-Features
+## Features
+- Upload CSV  
+- Auto preprocessing  
+- Train Models  
+- See accuracy   
+- Download model 
+## Tech
+- Python, Scikit-learn, Pandas, NumPy  
+- Streamlit / Gradio  
 
-Upload CSV
-
-Auto preprocessing
-
-Train ML models
-
-See accuracy 
-
-Download model
-
-Tech
-
-Python, Scikit-learn, Pandas, NumPy
-
-Streamlit 
-
-Setup
+## Setup
+```bash
 git clone https://github.com/yourusername/no-code-ml.git
 cd no-code-ml
 pip install -r requirements.txt
 streamlit run app.py
-
-Usage
-
-Open app (http://localhost:8501)
-
-Upload dataset
-
-Pick task & train model
-
-View results / download
-
-License
-
-MIT

@@ -93,6 +93,16 @@ st.set_page_config(
     page_icon="my_icon.png"   # ← your image file
 )
 
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.title("NO CODE ML MODEL BUILDER")
 st.write("by Sakib Hossain Tahmid")
 st.warning("*Errors may occur(ignore them). More features will be added soon*")
@@ -133,6 +143,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

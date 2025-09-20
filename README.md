@@ -17,7 +17,7 @@ Upload data → Train model → Get results.
 
 ## Setup
 ```bash
-git clone https://github.com/sakib12345/No-Code-ML.git
+git clone https://github.com/sakib-12345/No-Code-ML.git
 cd no-code-ml
 pip install -r requirements.txt
 streamlit run app.py

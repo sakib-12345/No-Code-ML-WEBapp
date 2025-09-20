@@ -13,7 +13,7 @@ Upload data → Train model → Get results.
 - Download model 
 ## Tech
 - Python, Scikit-learn, Pandas, NumPy  
-- Streamlit / Gradio  
+- Streamlit  
 
 ## Setup
 ```bash

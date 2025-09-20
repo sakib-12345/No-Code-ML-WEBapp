@@ -20,3 +20,6 @@ git clone https://github.com/yourusername/no-code-ml.git
 cd no-code-ml
 pip install -r requirements.txt
 streamlit run app.py
+```
+##License
+This project is licensed under the MIT License. You can use, copy, and modify it freely as long as you include the original license.

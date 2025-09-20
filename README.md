@@ -1,5 +1,6 @@
 # No Code ML Project
-
+Author: Sakib Hossain Tahmid
+[Try App-Click Here](https://nocodemlsakib.streamlit.app/)
 ## Overview
 A **No Code Machine Learning app** built with [Streamlit].  
 Upload data → Train model → Get results.  

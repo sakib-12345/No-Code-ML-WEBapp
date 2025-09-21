@@ -2,7 +2,7 @@
 Author: Sakib Hossain Tahmid
 [Try App-Click Here](https://nocodemlsakib.streamlit.app/)
 ## Overview
-A **No Code Machine Learning app** built with [Streamlit].  
+A **No Code Machine Learning app** built with Streamlit.  
 Upload data → Train model → Get results.  
 
 ## Features
@@ -11,9 +11,10 @@ Upload data → Train model → Get results.
 - Train Models  
 - See accuracy   
 - Download model 
+- Plot graphs
 ## Tech
-- Python, Scikit-learn, Pandas, NumPy  
-- Streamlit  
+- Backend: Python, Scikit-learn, Pandas, NumPy ,Matplotlib 
+- Frontend: Streamlit  
 
 ## Setup
 ```bash

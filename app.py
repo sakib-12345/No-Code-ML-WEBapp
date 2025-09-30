@@ -126,8 +126,7 @@ def graphs():
 
 st.set_page_config(
     page_title="No code ML",
-    page_icon="my_icon.png",
-    layout="wide"
+    page_icon="my_icon.png"
 )
 
 
@@ -246,6 +245,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

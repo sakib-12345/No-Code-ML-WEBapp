@@ -134,7 +134,7 @@ st.set_page_config(
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background:  linear-gradient(to bottom,#000000,#2F2F2F,#808080,#D3D3D3); /* solid blue */
+    background:  linear-gradient(to bottom,#000000,#2F2F2F,#808080,#D3D3D3); 
 }
 [data-testid="stHeader"] {
     background: rgba(0,0,0,0);
@@ -245,6 +245,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

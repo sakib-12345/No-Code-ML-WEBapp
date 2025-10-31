@@ -75,8 +75,8 @@ def model():
             st.warning(f"Model Accuracy: {score:.2f}% - The model accuracy is below 60%. Consider trying different parameters or data.")
         elif 60 <= score < 80:
             st.info(f"Model Accuracy: {score:.2f}% - The model accuracy is decent but could be improved.")
-        else:
-            st.success("Model Accuracy: {score:.2f}% - the accuracy is excillent")    
+        elif 80 <= score <= 100 :
+            st.success(f"Model Accuracy: {score:.2f}% - the accuracy is excillent")    
       
 
     model_bytes = pickle.dumps(model)
@@ -309,6 +309,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

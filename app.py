@@ -187,7 +187,7 @@ with home:
             st.markdown(f'Total <span style="color:red;">&nbsp;{miss_val}&nbsp;</span>missing values in dataset', unsafe_allow_html=True)
         else:
             if uploaded_file is not None:
-                st.info("No missing values detected in the dataset.")
+                st.success("No missing values detected in the dataset.")
             else:
                 st.info("After uploading a file, missing values will be checked autometically.")    
             fill_value = True    
@@ -311,6 +311,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

@@ -178,6 +178,9 @@ with home:
         st.write("Instructions:")
         feature = st.multiselect("Select Training Columns(must be numerical):", df.columns.tolist() if uploaded_file is not None else ["no option"])
         target = st.selectbox("Select Target Column(must be 0 or 1):", df.columns.tolist() if uploaded_file is not None else ["none"])
+        scale_type = st.selectbox("Select Scaling Method:", ["Standard scaler","Minmax scaler"] if uploaded_file is not None else ["no scaler"])
+        model_type = st.selectbox("Select Model:", ["Random Forest","Linear Regression","Logistic Regression","Decision Tree","KNN","SVM"] if uploaded_file is not None else ["no model"])
+        
         if uploaded_file is not None and df.isnull().sum().sum() > 0:
             fill_value = st.selectbox("Fill Null Value With:", ["Mean","Median","Drop"] if uploaded_file is not None else ["no value"])
             miss_val = df.isnull().sum().sum()
@@ -188,8 +191,7 @@ with home:
             else:
                 st.info("After uploading a file, missing values will be checked autometically.")    
             fill_value = True    
-        scale_type = st.selectbox("Select Scaling Method:", ["Standard scaler","Minmax scaler"] if uploaded_file is not None else ["no scaler"])
-        model_type = st.selectbox("Select Model:", ["Random Forest","Linear Regression","Logistic Regression","Decision Tree","KNN","SVM"] if uploaded_file is not None else ["no model"])
+      
         if model_type == "Linear Regression":
             st.info("Note: Linear Regression is for regression tasks. Ensure your target variable is continuous.")
             check = st.checkbox("I aggree that my target variable is continuous(For Valid Accuracy)", key="linreg_check")
@@ -309,6 +311,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

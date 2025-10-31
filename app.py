@@ -160,7 +160,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.title("NO CODE ML MODEL BUILDER")
 st.write("by Sakib Hossain Tahmid")
-st.warning("*Errors may occur(ignore them). More features will be added soon*")
+st.warning("*Early development || More features will be added soon || Ignore errors*")
 home, mod, gph = st.tabs(["Home", "Model Details"," Graphs"])
 confirm = False
 with home:
@@ -171,9 +171,9 @@ with home:
             try:
                 df = pd.read_csv(uploaded_file)
                 st.dataframe(df)
-            except Exception as e:
+            except Exception:
                 df = pd.DataFrame()
-                st.error(f"Error loading file: {e}")    
+                st.error("This file is not loading. Try other files.")    
     with col2:
         st.write("Instructions:")
         feature = st.multiselect("Select Training Columns(must be numerical):", df.columns.tolist() if uploaded_file is not None else ["no option"])
@@ -309,6 +309,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

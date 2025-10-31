@@ -160,7 +160,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.title("NO CODE ML MODEL BUILDER")
 st.write("by Sakib Hossain Tahmid")
-st.warning("*Early development || More features will be added soon || Ignore errors*")
+st.warning("⚠*Early development . More features will be added soon . Ignore errors*")
 home, mod, gph = st.tabs(["Home", "Model Details"," Graphs"])
 confirm = False
 with home:
@@ -309,6 +309,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

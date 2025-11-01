@@ -21,7 +21,10 @@ def model():
     st.write("> Will predict:")
     st.markdown(f'<span style="color:orange;">&nbsp;&nbsp;&nbsp;{target}</span>', unsafe_allow_html=True)
     st.write("> Fill Null Value With:")
-    st.markdown(f'<span style="color:orange;">&nbsp;&nbsp;&nbsp;{fill_value}</span>', unsafe_allow_html=True)
+    if fill_value is True:
+        st.markdown(f'<span style="color:orange;">&nbsp;&nbsp;&nbsp;No mising values</span>', unsafe_allow_html=True)
+    else:    
+        st.markdown(f'<span style="color:orange;">&nbsp;&nbsp;&nbsp;{fill_value}</span>', unsafe_allow_html=True)
     st.write("> Scaling Method:")
     st.markdown(f'<span style="color:orange;">&nbsp;&nbsp;&nbsp;{scale_type}</span>', unsafe_allow_html=True)
 
@@ -314,6 +317,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 

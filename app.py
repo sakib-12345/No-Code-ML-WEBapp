@@ -78,14 +78,17 @@ def model():
         elif 80 <= score <= 100 :
             st.success(f"Model Accuracy: {score:.2f}% - the accuracy is excillent")    
       
-
-    model_bytes = pickle.dumps(model)
-    download = st.download_button(
+    with st.expander("Download your Model"):
+        st.write("please ensure:")
+        st.markdown('* You must have <span style="color:pink;">scikit-learn 1.7.2</span>',unsafe_allow_html=True)
+        st.markdown(f'* Input features order must be: <span style="color:orange;">{feature}</span>',unsafe_allow_html=True)
+        model_bytes = pickle.dumps(model)
+        download = st.download_button(
             label="Download Model",
             data=model_bytes,
             file_name="trained_model.pkl",
             mime="application/octet-stream"
-             ) 
+            ) 
         
  
     
@@ -311,6 +314,7 @@ st.markdown(
             f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',
             unsafe_allow_html=True
            ) 
+
 
 
 
